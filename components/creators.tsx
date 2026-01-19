@@ -42,33 +42,33 @@ const creators = [
 
 export default function CreatorsSection() {
   return (
-    <section className="bg-white text-gray-900 py-20">
+    <section className=" text-gray-900 py-20">
       <div className="mx-auto max-w-7xl px-6">
         
         {/* Header */}
         <div className="text-center mb-14">
-          <span className="inline-block mb-3 rounded-full border border-yellow-500 px-4 py-1 text-xs font-medium text-yellow-600">
+          <span className="inline-block mb-3 rounded-full border border-[#fe7b4b] px-4 py-1 text-xs font-medium text-[#fe7b4b]">
             Our Clients
           </span>
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
+          <h2 className="text-white text-4xl md:text-5xl font-semibold tracking-tight">
             Creators{" "}
-            <span className="text-gray-500 font-normal">
+            <span className="text-gray-300 font-normal">
               I've worked with
             </span>
           </h2>
         </div>
 
         {/* Stats */}
-        <div className="flex justify-center items-center gap-20 my-12">
+        <div className="flex justify-center items-center gap-10 my-12">
           {stats.map((stat, i) => (
             <div
               key={i}
-              className="text-center border-b md:border-b-0 md:border-r border-gray-200 last:border-r-0 pb-6 md:pb-0 pr-10"
+              className="text-center text-[#c6c9d0] border-b md:border-b-0 md:border-r border-gray-200 last:border-r-0 pb-6 md:pb-0 pr-10"
             >
-              <div className="text-4xl font-bold text-yellow-500">
+              <div className="text-4xl font-bold text-[#fe7b4b]">
                 {stat.value}
               </div>
-              <p className="mt-1 text-sm text-gray-500">
+              <p className="mt-1 text-sm text-white-500">
                 {stat.label}
               </p>
             </div>
@@ -76,7 +76,7 @@ export default function CreatorsSection() {
         </div>
 
         {/* Creators */}
-        <div className="flex items-center justify-center gap-10">
+        <div className="flex items-center justify-center gap-3">
           {creators.map((creator, i) => (
             <div key={i} className="text-center">
               <div className="relative mx-auto h-38 w-38 overflow-hidden rounded-2xl bg-gray-100">
@@ -88,10 +88,10 @@ export default function CreatorsSection() {
                 />
               </div>
 
-              <h3 className="mt-3 text-sm font-medium leading-tight">
+              <h3 className="mt-3 text-[#c6c9d0] text-sm font-medium leading-tight">
                 {creator.name}
               </h3>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-[#a0a3a9]">
                 {creator.subtitle}
               </p>
             </div>
