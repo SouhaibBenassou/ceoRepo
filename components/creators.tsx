@@ -2,41 +2,41 @@
 import Image from "next/image";
 
 const stats = [
-  { value: "+150", label: "Projects Completed" },
-  { value: "+70", label: "Satisfied Clients" },
+  { value: "+50", label: "Projects Completed" },
+  { value: "+20", label: "Satisfied Clients" },
   { value: "+19M", label: "Views" },
 ];
 
 const creators = [
   {
-    name: "Learn With Shopify",
-    subtitle: "728K subscribers",
-    image: "https://framerusercontent.com/images/C5z57QAFRTpFEQ5yarJrnRF0w.jpg?width=400&height=400",
+    name: "Mrnd.clothing",
+    subtitle: "70.2K followers",
+    image: "./assets/mrind.jpg",
   },
   {
-    name: "Daniel Contreras",
-    subtitle: "+400K followers",
-    image: "https://framerusercontent.com/images/fYRpsfBs5JQmx0HN7TseAzYXiic.jpg?width=160&height=160",
+    name: "Facts.in.minutees",
+    subtitle: "1,09M subscribers",
+    image: "./assets/Mini-Youtube.png",
   },
   {
-    name: "Joseph",
-    subtitle: "100K subscribers",
-    image: "https://framerusercontent.com/images/MAifPhXrzEoKNFLLJzpsLizd0.jpg?width=160&height=160",
+    name: "Barry_empire",
+    subtitle: "32.9K followers",
+    image: "./assets/barry_empire.jpg",
   },
   {
-    name: "Steven Cravotta",
-    subtitle: "31.5K subscribers",
-    image: "https://framerusercontent.com/images/cRMr8G2HwSHXJoRm4X5SbM6T8U.webp?width=470&height=660 470w",
+    name: "Donyalami",
+    subtitle: "204K followers",
+    image: "./assets/donyalami.jpg",
   },
   {
-    name: "Ruri Ohama",
-    subtitle: "1.50M subscribers",
-    image: "https://framerusercontent.com/images/C5z57QAFRTpFEQ5yarJrnRF0w.jpg?width=400&height=400",
+    name: "sheeeeeeeeeeeva",
+    subtitle: "200K followers",
+    image: "./assets/sheeeeeeeeeeeva.jpg",
   },
   {
-    name: "Calum White",
-    subtitle: "25K followers",
-    image: "https://framerusercontent.com/images/C5z57QAFRTpFEQ5yarJrnRF0w.jpg?width=400&height=400",
+    name: "iamlilpatty",
+    subtitle: "392K followers",
+    image: "./assets/iamlilpatty.jpg",
   },
 ];
 
@@ -44,7 +44,6 @@ export default function CreatorsSection() {
   return (
     <section className=" text-gray-900 py-20">
       <div className="mx-auto max-w-7xl px-6">
-        
         {/* Header */}
         <div className="text-center mb-14">
           <span className="inline-block mb-3 rounded-full border border-[#fe7b4b] px-4 py-1 text-xs font-medium text-[#fe7b4b]">
@@ -52,9 +51,7 @@ export default function CreatorsSection() {
           </span>
           <h2 className="text-white text-4xl md:text-5xl font-semibold tracking-tight">
             Creators{" "}
-            <span className="text-gray-300 font-normal">
-              I've worked with
-            </span>
+            <span className="text-gray-300 font-normal">I've worked with</span>
           </h2>
         </div>
 
@@ -68,9 +65,7 @@ export default function CreatorsSection() {
               <div className="text-4xl font-bold text-[#fe7b4b]">
                 {stat.value}
               </div>
-              <p className="mt-1 text-sm text-white-500">
-                {stat.label}
-              </p>
+              <p className="mt-1 text-sm text-white-500">{stat.label}</p>
             </div>
           ))}
         </div>
@@ -91,13 +86,10 @@ export default function CreatorsSection() {
               <h3 className="mt-3 text-[#c6c9d0] text-sm font-medium leading-tight">
                 {creator.name}
               </h3>
-              <p className="text-xs text-[#a0a3a9]">
-                {creator.subtitle}
-              </p>
+              <p className="text-xs text-[#a0a3a9]">{creator.subtitle}</p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

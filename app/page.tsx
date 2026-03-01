@@ -5,6 +5,8 @@ import CreatorsSection from "@/components/creators";
 import { BackGroundLight } from "@/components/background-light";
 import ContactForm from "@/components/contact";
 import { useState } from "react";
+import { VideoPlayer } from "@/components/video-player";
+import { SliderTestimonials } from "@/components/slider-testimonials";
 
 export default function Home() {
   const [openContactForm, setOpenContactForm] = useState(false);
@@ -20,6 +22,8 @@ export default function Home() {
           onClose={() => setOpenContactForm(false)}
         />
       )}
+      <VideoPlayer />
+      <SliderTestimonials />
     </main>
   );
 }
