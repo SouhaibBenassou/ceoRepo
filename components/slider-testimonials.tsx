@@ -1,10 +1,11 @@
 "use client";
 
-import { ChevronLeft, ChevronRight, Play } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 import { useRef, useState } from "react";
 
 export function SliderTestimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [playingIndex, setPlayingIndex] = useState<number | null>(null);
   const carouselRef = useRef<HTMLDivElement>(null);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
@@ -12,6 +13,8 @@ export function SliderTestimonials() {
     { id: 1, src: "/videos/test1.mp4", title: "Nature Documentary" },
     { id: 2, src: "/videos/test2.mp4", title: "City Life" },
     { id: 3, src: "/videos/test3.mp4", title: "Photography" },
+    { id: 4, src: "/videos/test4.mp4", title: "Photography" },
+    { id: 5, src: "/videos/test5.mp4", title: "Photography" },
   ];
 
   const resetAllVideos = () => {
@@ -21,6 +24,7 @@ export function SliderTestimonials() {
       video.currentTime = 0;
       video.muted = true;
     });
+    setPlayingIndex(null);
   };
 
   const scrollToIndex = (index: number) => {
@@ -52,14 +56,24 @@ export function SliderTestimonials() {
   };
 
   const handleVideoClick = (index: number) => {
-    resetAllVideos();
-    scrollToIndex(index);
-
     const selectedVideo = videoRefs.current[index];
     if (!selectedVideo) return;
 
+    // If this video is already playing, pause & mute it
+    if (!selectedVideo.paused) {
+      selectedVideo.pause();
+      selectedVideo.muted = true;
+      setPlayingIndex(null);
+      return;
+    }
+
+    // Otherwise: stop others, scroll, then play this one
+    resetAllVideos();
+    scrollToIndex(index);
+
     selectedVideo.muted = false;
     selectedVideo.play();
+    setPlayingIndex(index);
   };
 
   return (
@@ -98,42 +112,51 @@ export function SliderTestimonials() {
               msOverflowStyle: "none",
             }}
           >
-            {videos.map((video, index) => (
-              <div
-                key={video.id}
-                className={`shrink-0 w-72 md:w-80 snap-center transition-all duration-300 ${
-                  index === currentIndex
-                    ? "scale-100 opacity-100"
-                    : "scale-95 opacity-60"
-                }`}
-              >
+            {videos.map((video, index) => {
+              const isActive = index === currentIndex;
+              const isPlaying = index === playingIndex;
+
+              return (
                 <div
-                  onClick={() => handleVideoClick(index)}
-                  className="relative rounded-3xl overflow-hidden aspect-[3/4] bg-gray-900 cursor-pointer group"
+                  key={video.id}
+                  className={`shrink-0 w-72 md:w-80 snap-center transition-all duration-300 ${
+                    isActive ? "scale-100 opacity-100" : "scale-95 opacity-60"
+                  }`}
                 >
-                  {/* Video */}
-                  <video
-                    ref={(el) => {
-                      videoRefs.current[index] = el;
-                    }}
-                    src={video.src}
-                    className="w-full h-full object-cover"
-                    muted
-                    loop
-                    playsInline
-                  />
+                  <div
+                    onClick={() => handleVideoClick(index)}
+                    className="relative rounded-3xl overflow-hidden aspect-[3/4] bg-gray-900 cursor-pointer group"
+                  >
+                    {/* Video */}
+                    <video
+                      ref={(el) => {
+                        videoRefs.current[index] = el;
+                      }}
+                      src={video.src}
+                      className="w-full h-full object-cover"
+                      muted
+                      loop
+                      playsInline
+                    />
 
-                  {/* Gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 
-                  {/* Play label */}
-                  <div className="absolute bottom-6 left-6 flex items-center gap-2 pointer-events-none">
-                    <Play className="w-4 h-4 text-white fill-white" />
-                    <span className="text-sm text-white">Play</span>
+                    {/* Play / Pause label */}
+                    <div className="absolute bottom-6 left-6 flex items-center gap-2 pointer-events-none">
+                      {isPlaying ? (
+                        <Pause className="w-4 h-4 text-white" />
+                      ) : (
+                        <Play className="w-4 h-4 text-white fill-white" />
+                      )}
+                      <span className="text-sm text-white">
+                        {isPlaying ? "Pause" : "Play"}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

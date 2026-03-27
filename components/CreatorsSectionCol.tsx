@@ -3,56 +3,58 @@ import Image from "next/image";
 import CountUp from "./ui/CountUp";
 
 const stats = [
-  { value: "+50", label: "Projects Completed" },
-  { value: "+20", label: "Satisfied Clients" },
-  { value: "+19", label: "Views" },
+  { value: "+19", label: "Projects Completed" },
+  { value: "+30", label: "Satisfied Clients" },
+  { value: "+45", label: "Views" },
 ];
 
 const creators = [
   {
-    name: "Mrnd.clothing",
+    name: "barca_bdarija",
     subtitle: "70.2K followers",
-    image: "/assets/mrind.jpg",
+    image: "/assets/barcabdarija.jpg",
   },
   {
-    name: "Facts.in.minutees",
-    subtitle: "1,09M subscribers",
-    image: "/assets/Mini-Youtube.jpg",
+    name: "kawtarbamo",
+    subtitle: "9.8M subscribers",
+    image: "/assets/bamou.jpg",
   },
   {
-    name: "Barry_empire",
-    subtitle: "32.9K followers",
+    name: "iamlilpatty",
+    subtitle: "392K followers",
+    image: "/assets/iamlilpatty.jpg",
+  },
+  {
+    name: "barry_empire",
+    subtitle: "32.8K followers",
     image: "/assets/barry_empire.jpg",
   },
   {
-    name: "infiniagrowth",
-    subtitle: "5K followers",
-    image: "/assets/inifinity.jpg",
+    name: "sheeeeeeeeeeeva",
+    subtitle: "203K followers",
+    image: "/assets/sheeeeeeeeeeeva.jpg",
   },
   {
-    name: "ayoubcopywriter",
-    subtitle: "50K followers",
-    image: "/assets/ayoubcopywriter.jpg",
-  },
-  {
-    name: "lassakri",
-    subtitle: "1.1M",
-    image: "/assets/lassakri.jpg",
+    name: "donyalami",
+    subtitle: "210K",
+    image: "/assets/donyalami.jpg",
   },
 ];
 
-export default function CreatorsSection() {
+export default function CreatorsSectionCol() {
   return (
     <section className="text-gray-900 py-16 md:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14">
           <span className="inline-block mb-3 rounded-full border border-[#fe7b4b] px-4 py-1 text-xs font-medium text-[#fe7b4b]">
-            Our Clients
+            Our collaborated
           </span>
           <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight">
             Creators{" "}
-            <span className="text-gray-300 font-normal">I've worked with</span>
+            <span className="text-gray-300 font-normal">
+              you’ve collaborated with
+            </span>
           </h2>
         </div>
 
