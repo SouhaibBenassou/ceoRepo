@@ -17,7 +17,7 @@ const creators = [
   {
     name: "Facts.in.minutees",
     subtitle: "1,09M subscribers",
-    image: "/assets/Mini-Youtube.jpg",
+    image: "/assets/MiniYoutube.jpg",
   },
   {
     name: "Barry_empire",
