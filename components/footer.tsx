@@ -28,8 +28,7 @@ export function Footer() {
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-4 pointer-events-none"
         }`}
-        aria-label="Scroll to top"
-      >
+        aria-label="Scroll to top">
         <ArrowUp className="h-5 w-5 text-white" />
       </button>
 
@@ -56,20 +55,17 @@ export function Footer() {
               <div className="flex gap-2">
                 <a
                   href="#"
-                  className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-black/20"
-                >
+                  className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-black/20">
                   <Instagram className="h-5 w-5 text-gray-300 group-hover:text-[#f97316]" />
                 </a>
                 <a
                   href="#"
-                  className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-black/20"
-                >
+                  className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-black/20">
                   <Youtube className="h-5 w-5 text-gray-300 group-hover:text-[#f97316]" />
                 </a>
                 <a
                   href="#"
-                  className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-black/20"
-                >
+                  className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-black/20">
                   <Linkedin className="h-5 w-5 text-gray-300 group-hover:text-[#f97316]" />
                 </a>
               </div>
@@ -84,32 +80,28 @@ export function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1"
-                  >
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1">
                     Home
                   </a>
                 </li>
                 <li>
                   <a
                     href="#work"
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1"
-                  >
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1">
                     Portfolio
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1"
-                  >
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1">
                     Services
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1"
-                  >
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1">
                     About
                   </a>
                 </li>
@@ -125,32 +117,28 @@ export function Footer() {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1"
-                  >
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1">
                     Video Editing
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1"
-                  >
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1">
                     Color Grading
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1"
-                  >
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1">
                     Motion Graphics
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1"
-                  >
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 block py-1">
                     YouTube Optimization
                   </a>
                 </li>
@@ -164,18 +152,17 @@ export function Footer() {
               </h4>
               <div className="space-y-4 mb-6">
                 <p className="text-gray-400 flex items-start gap-3">
-                  <span className="text-[#f97316] mt-1 flex-shrink-0">📧</span>
+                  <span className="text-[#f97316] mt-1 shrink-0">📧</span>
                   <span>hello@sutoxoriginals.com</span>
                 </p>
                 <p className="text-gray-400 flex items-start gap-3">
-                  <span className="text-[#f97316] mt-1 flex-shrink-0">📱</span>
+                  <span className="text-[#f97316] mt-1 shrink-0">📱</span>
                   <span>+212 6 XX XX XX XX</span>
                 </p>
               </div>
               <a
                 href="https://sutoxoriginals.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-                className="inline-block bg-gradient-to-r from-[#fe7b4c] to-orange-500 text-black px-6 py-3 rounded-xl font-semibold hover:from-orange-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 w-full text-center"
-              >
+                className="inline-block bg-gradient-to-r from-[#fe7b4c] to-orange-500 text-black px-6 py-3 rounded-xl font-semibold hover:from-orange-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 w-full text-center">
                 Start Project
               </a>
             </div>
@@ -189,20 +176,17 @@ export function Footer() {
             <div className="flex flex-wrap gap-6 text-sm text-gray-500 order-1 md:order-2">
               <a
                 href="#"
-                className="hover:text-white transition-colors hover:underline"
-              >
+                className="hover:text-white transition-colors hover:underline">
                 Privacy
               </a>
               <a
                 href="#"
-                className="hover:text-white transition-colors hover:underline"
-              >
+                className="hover:text-white transition-colors hover:underline">
                 Terms
               </a>
               <a
                 href="#"
-                className="hover:text-white transition-colors hover:underline"
-              >
+                className="hover:text-white transition-colors hover:underline">
                 Cookies
               </a>
             </div>

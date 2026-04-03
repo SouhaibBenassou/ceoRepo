@@ -69,14 +69,14 @@ export function Hero() {
 
           <div className="mt-12 md:mt-16 flex flex-col sm:flex-row justify-center gap-4 sm:gap-4 flex-wrap">
             <a href="https://sutoxoriginals.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio">
-              <button className="group relative inline-flex items-center gap-2 rounded-full bg-[#fe7b4b] px-6 py-3 sm:px-8 sm:py-4 text-black text-base sm:text-lg font-medium shadow-[0_20px_60px_rgba(254,123,75,0.45)] transition-all duration-300 hover:scale-105 w-full sm:w-auto">
+              <button className="group relative inline-flex items-center gap-2 rounded-full bg-[#fe7b4b] px-6 py-3 sm:px-8 sm:py-4 text-black text-base sm:text-lg font-medium shadow-[0_20px_60px_rgba(254,123,75,0.45)] transition-all duration-300 hover:scale-105">
                 Let`s Work Together
                 <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                 <span className="absolute inset-0 -z-10 rounded-full blur-xl bg-[#fe7b4b]/50 opacity-0 group-hover:opacity-100 transition" />
               </button>
             </a>
             <a href="https://www.instagram.com/by_dekto/">
-              <button className="inline-flex items-center gap-2 rounded-full px-5 py-3 sm:px-6 sm:py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 transition w-full sm:w-auto">
+              <button className="inline-flex items-center gap-2 rounded-full px-5 py-3 sm:px-6 sm:py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 transition">
                 <Play className="h-4 w-4 sm:h-5 sm:w-5" />
                 Watch Reel
               </button>
