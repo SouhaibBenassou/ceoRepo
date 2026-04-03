@@ -61,10 +61,9 @@ export default function CreatorsSection() {
           {stats.map((stat, i) => (
             <div
               key={i}
-              className="text-center text-[#c6c9d0] w-full md:w-auto border-b md:border-b-0 md:border-r border-gray-800 last:border-r-0 pb-4 md:pb-0 md:pr-10"
-            >
+              className="text-center text-[#c6c9d0] w-full md:w-auto border-b md:border-b-0 md:border-r border-gray-800 last:border-r-0 pb-4 md:pb-0 md:pr-10">
               {i === 2 ? (
-                <div className="flex">
+                <div className="flex justify-center">
                   <CountUp
                     from={0}
                     to={Number(stat.value)}
