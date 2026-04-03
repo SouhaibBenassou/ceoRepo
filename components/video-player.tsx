@@ -20,7 +20,7 @@ export function VideoPlayer() {
   };
 
   return (
-    <div className="relative max-w-5xl mx-auto">
+    <div className="relative max-w-5xl mx-auto" id="work">
       <div className="flex justify-center items-center mb-9 gap-2">
         <Briefcase className="text-[#ffffff]" />
         <h1 className="text-3xl font-bold text-[#ffffff] ">Our Work</h1>

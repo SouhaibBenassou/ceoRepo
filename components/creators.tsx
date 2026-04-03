@@ -3,9 +3,9 @@ import Image from "next/image";
 import CountUp from "./ui/CountUp";
 
 const stats = [
-  { value: "+50", label: "Projects Completed" },
-  { value: "+20", label: "Satisfied Clients" },
-  { value: "+19", label: "Views" },
+  { value: "+149", label: "Projects Completed" },
+  { value: "+99", label: "Satisfied Clients" },
+  { value: "+100", label: "Views" },
 ];
 
 const creators = [
@@ -25,9 +25,9 @@ const creators = [
     image: "/assets/barry_empire.jpg",
   },
   {
-    name: "infiniagrowth",
-    subtitle: "5K followers",
-    image: "/assets/inifinity.jpg",
+    name: "sea.fdol",
+    subtitle: "135K followers",
+    image: "/assets/seafdole.jpg",
   },
   {
     name: "ayoubcopywriter",

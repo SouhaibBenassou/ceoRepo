@@ -8,25 +8,25 @@ export function Header({ openContactForm }: IHeaderInterface) {
       <nav>
         <div className="flex items-center justify-center">
           <div className="inline-flex items-center gap-2 sm:gap-6 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 p-1.5 sm:px-4 sm:py-2 text-white shadow-lg whitespace-nowrap">
-            <div className="relative w-8 h-8 sm:w-10 sm:h-10 shrink-0 flex items-center justify-center">
+            <div className="relative w-12 h-12 sm:w-10 sm:h-10 shrink-0 flex items-center justify-center">
               <Image
                 src="/assets/logo.png"
                 alt="logo"
                 fill
                 className="object-contain"
-                sizes="32px"
+                sizes="64px"
                 priority
               />
             </div>
 
             <div className="flex items-center gap-3 sm:gap-6 text-[14px] sm:text-[16px]">
               <a
-                href="#services"
+                href="#footer"
                 className="hover:text-[#fe7b4b] transition-colors cursor-pointer">
                 Services
               </a>
               <a
-                href="#works"
+                href="#work"
                 className="hover:text-[#fe7b4b] transition-colors cursor-pointer">
                 Works
               </a>

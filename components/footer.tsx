@@ -1,6 +1,6 @@
 "use client";
 
-import { Instagram, Youtube, Linkedin, ArrowUp } from "lucide-react";
+import { Instagram, Phone,ArrowUp , X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function Footer() {
@@ -32,7 +32,7 @@ export function Footer() {
         <ArrowUp className="h-5 w-5 text-white" />
       </button>
 
-      <footer className="w-full border-t border-[#1e293b] bg-gradient-to-b from-black to-[#020617]">
+      <footer id="footer" className="w-full border-t border-[#1e293b] bg-gradient-to-b from-black to-[#020617]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12 lg:py-16">
             {/* Logo & Description */}
@@ -54,19 +54,19 @@ export function Footer() {
               {/* Social Links */}
               <div className="flex gap-2">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/by_dekto/"
                   className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-black/20">
                   <Instagram className="h-5 w-5 text-gray-300 group-hover:text-[#f97316]" />
                 </a>
                 <a
-                  href="#"
+                  href="https://wa.me/212681334600"
                   className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-black/20">
-                  <Youtube className="h-5 w-5 text-gray-300 group-hover:text-[#f97316]" />
+                  <Phone className="h-5 w-5 text-gray-300 group-hover:text-[#f97316]" />
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/by_dekto"
                   className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-black/20">
-                  <Linkedin className="h-5 w-5 text-gray-300 group-hover:text-[#f97316]" />
+                  <X className="h-5 w-5 text-gray-300 group-hover:text-[#f97316]" />
                 </a>
               </div>
             </div>
@@ -153,11 +153,11 @@ export function Footer() {
               <div className="space-y-4 mb-6">
                 <p className="text-gray-400 flex items-start gap-3">
                   <span className="text-[#f97316] mt-1 shrink-0">📧</span>
-                  <span>hello@sutoxoriginals.com</span>
+                  <span>ghidanimohamed@gmail.com</span>
                 </p>
                 <p className="text-gray-400 flex items-start gap-3">
                   <span className="text-[#f97316] mt-1 shrink-0">📱</span>
-                  <span>+212 6 XX XX XX XX</span>
+                  <span>+212 681334600</span>
                 </p>
               </div>
               <a

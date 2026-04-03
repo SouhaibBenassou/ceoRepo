@@ -57,7 +57,7 @@ export default function ContactFormDark({
                 icon={<Mail size={16} />}
                 label="Email"
                 index="02"
-                placeholder="your@email.com"
+                placeholder="ghidanimohamed@gmail.com"
               />
 
               {/* Phone */}
@@ -65,7 +65,7 @@ export default function ContactFormDark({
                 icon={<Phone size={16} />}
                 label="Phone"
                 index="03"
-                placeholder="+212 6XX XXX XXX"
+                placeholder="0681334600"
               />
 
               {/* Message */}
