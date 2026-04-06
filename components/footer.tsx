@@ -161,7 +161,7 @@ export function Footer() {
                 </p>
               </div>
               <a
-                href="https://sutoxoriginals.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+              href="https://tally.so/r/q4WAyY"
                 className="inline-block bg-gradient-to-r from-[#fe7b4c] to-orange-500 text-black px-6 py-3 rounded-xl font-semibold hover:from-orange-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 w-full text-center">
                 Start Project
               </a>

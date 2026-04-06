@@ -9,6 +9,7 @@ import { VideoPlayer } from "@/components/video-player";
 import { SliderTestimonials } from "@/components/slider-testimonials";
 import { Footer } from "@/components/footer";
 import CreatorsSectionCol from "@/components/CreatorsSectionCol";
+import LetsWorktogether from "@/components/letsWorkTogether";
 
 export default function Home() {
   const [openContactForm, setOpenContactForm] = useState(false);
@@ -26,7 +27,8 @@ export default function Home() {
       )}
       <VideoPlayer />
       <CreatorsSectionCol />
-      <SliderTestimonials />
+      <SliderTestimonials /> 
+      <LetsWorktogether/>
       <Footer />
     </main>
   );
